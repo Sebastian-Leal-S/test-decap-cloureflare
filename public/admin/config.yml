@@ -1,0 +1,39 @@
+backend:
+  name: github
+  repo: Sebastian-Leal-S/test-decap-cloureflare
+  branch: master
+  base_url: https://decap-oauth.sedastianleal.workers.dev/
+  auth_endpoint: auth
+
+media_folder: "src/assets"
+public_folder: "/src/assets"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
+    fields:
+      - label: "Título"
+        name: "title"
+        widget: "string"
+
+      - label: "Descripción"
+        name: "description"
+        widget: "text"
+        required: false
+
+      - label: "Fecha"
+        name: "pubDate"
+        widget: "datetime"
+
+      - label: "Imagen"
+        name: "heroImage"
+        widget: "image"
+        required: false
+
+      - label: "Contenido"
+        name: "body"
+        widget: "markdown"
