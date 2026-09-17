@@ -3,7 +3,7 @@ backend:
   repo: Sebastian-Leal-S/test-decap-cloureflare
   branch: master
   base_url: https://decap-oauth.sedastianleal.workers.dev
-  auth_endpoint: auth
+  auth_endpoint: callback
 
 media_folder: "src/assets"
 public_folder: "/src/assets"
