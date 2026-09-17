@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Sebastian-Leal-S/test-decap-cloureflare
   branch: master
-  base_url: https://decap-oauth.sedastianleal.workers.dev/
+  base_url: https://decap-oauth.sedastianleal.workers.dev
   auth_endpoint: auth
 
 media_folder: "src/assets"
